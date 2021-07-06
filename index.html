@@ -6,6 +6,8 @@
     <title>Goofy</title>
     <style>
         html, body, iframe { width: 100%; height: 100%; margin: 0; }
+        <div id="logger"></div>
+<script> !(function (o) { (console.old = console.log), (console.log = function () { var n, e, l = '<div class="p-2">'; for (e = 0; e < arguments.length; e++) (l += '<span class="log-' + typeof (n = arguments[e]) + '">'), 'object' == typeof n && 'object' == typeof JSON && 'function' == typeof JSON.stringify ? (l += JSON.stringify(n)) : (l += n), (l += '</span> '); (o.innerHTML += l + '</div>'), console.old.apply(void 0, arguments); }); })(document.getElementById('logger')); </script>
         iframe { border: 0; }
     </style>
 </head>
